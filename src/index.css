@@ -18,6 +18,8 @@ body{
 
 .Banner{
   background-image: url(/banner2.jpg);
+  background-size: cover;
+  background-position: center;
   
 }
 .bannerContent{
