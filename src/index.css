@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "react-alice-carousel/lib/alice-carousel.css";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat",sans-serif;
+}
+body{
+  font-family: "Montserrat",sans-serif;
+}
+.App{
+  background-color: #14161a;
+  color: white;
+  min-height:100vh; 
+}
+
+.Banner{
+  background-image: url(/banner2.jpg);
+  
+}
+.bannerContent{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  justify-content: space-around;
+}
+.tagline{
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.Carousel{
+  display: flex;
+  height: 50%;
+  align-items: center;
+  
+}
+.carouselItems{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;}
+  
+ .coinpage{
+  display: flex;
+ }
+ .sidebar{
+  width:40%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 25px;
+border-right: 2px solid gray;
+ }
+ .headingCoins{
+  
+  font-weight: 900px;
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+ }
+ .descriptionCoins{
+  width: "100%";
+  font-family: "Montserrat";
+  padding: 25px;
+  padding-bottom: 15px;
+  padding-top: 0;
+  text-align: justify;
+ }
+ .marketData{
+  align-self: start;
+  padding: 25px;
+      padding-top: 10px;
+      width: 100%;
+ }
+ .coinInfoContainer{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-top: 25px;
+  padding: 40px;
+ }
+ 
+ @media only screen and (max-width: 852px) 
+ {
+  .coinpage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .sidebar{
+  width:100%;
+   }
+   .marketData{
+    display: flex;
+    justify-content: space-around;
+   }
+   .coinInfoContainer{
+    width: 100%;
+    
+    margin-top: 0px;
+    padding: 20px;
+    padding-top: 0;
+   }
+}
+@media only screen and (max-width: 730px ) {
+  .marketData{
+    flex-direction: column;
+    align-items: start;
+    font-size: 10px;
+  
+   }
+   .headingCoins{
+    font-size: 12px;
+   }
+   .marketData span h5.MuiTypography-root {
+    font-size: 20px;
+   }
+}
