@@ -12,6 +12,9 @@ import {
 import React,{useContext} from "react";
 import { CryptoContext } from "../cryptocontext";
 import { useNavigate } from "react-router-dom";
+import AuthModal from "./Authentication/AuthModal";
+import UserSideBar from "./Authentication/UserSideBar";
+
 
 
 
@@ -25,7 +28,7 @@ const darkTheme = createTheme({
 });
 
 const Header = () => { 
-  const {currency, symbol, setCurrency} = useContext(CryptoContext);
+  const {currency, symbol, setCurrency,user} = useContext(CryptoContext);
   
   let navigate = useNavigate();
    const handleClick = () => {
@@ -68,6 +71,8 @@ const Header = () => {
             <MenuItem value={"USD"}>USD</MenuItem>
             <MenuItem value={"INR"}>INR</MenuItem>
           </Select>
+          {!user&&<AuthModal/>}
+          {user&&<UserSideBar/>}
         </Toolbar>
       </Container>
     </AppBar>

@@ -9,6 +9,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
       <CryptoProvider>
       <App />
+      
      </CryptoProvider>
   </StrictMode>
     

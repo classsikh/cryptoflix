@@ -5,8 +5,6 @@ const SelectButtonStyled = styled.span`
   border: 1px solid gold;
   border-radius: 5px;
   padding: 10px ;
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: "Montserrat";
   cursor: pointer;
   background-color: ${({ selected }) => (selected ? 'gold' : '')};
@@ -14,6 +12,7 @@ const SelectButtonStyled = styled.span`
   font-weight: ${({ selected }) => (selected ? 700 : 500)};
   transition: background-color 0.3s, color 0.3s;
   text-align:center;
+  font-size:14px;
 width:22%;
   &:hover {
     background-color: gold;

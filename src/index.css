@@ -53,14 +53,23 @@ body{
   
  .coinpage{
   display: flex;
+  width: fit-content;
  }
  .sidebar{
-  width:40%;
+width:35%;
 display: flex;
 flex-direction: column;
 align-items: center;
 margin-top: 25px;
 border-right: 2px solid gray;
+gap: 10px;
+ }
+ .contd{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
  }
  .headingCoins{
   
@@ -71,28 +80,42 @@ border-right: 2px solid gray;
  .descriptionCoins{
   width: "100%";
   font-family: "Montserrat";
-  padding: 25px;
+  padding: 10px;
   padding-bottom: 15px;
   padding-top: 0;
   text-align: justify;
  }
+ 
  .marketData{
-  align-self: start;
-  padding: 25px;
-      padding-top: 10px;
-      width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 10px;
+  
+    
+ }
+ .marketData span h5.MuiTypography-root {
+  font-size: 18px;
+  font-weight: bolder;
  }
  .coinInfoContainer{
-  width: 65%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
   margin-top: 25px;
-  padding: 40px;
+  padding: 10px;
+ }
+ .btncont{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
  }
  
- @media only screen and (max-width: 852px) 
+ @media only screen and (max-width: 768px) 
  {
   .coinpage{
   display: flex;
@@ -102,29 +125,34 @@ border-right: 2px solid gray;
  .sidebar{
   width:100%;
    }
+   .contd{
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  
+   }
    .marketData{
     display: flex;
     justify-content: space-around;
    }
    .coinInfoContainer{
     width: 100%;
-    
-    margin-top: 0px;
-    padding: 20px;
-    padding-top: 0;
+       
+   }
+   .btncont{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    width: 100vw;
    }
 }
-@media only screen and (max-width: 730px ) {
-  .marketData{
-    flex-direction: column;
-    align-items: start;
-    font-size: 10px;
+@media only screen and (max-width: 425px ) {
+ .btncont span{
+  font-size: 11px;
+  padding: 5px;
+ 
+ }
   
-   }
-   .headingCoins{
-    font-size: 12px;
-   }
-   .marketData span h5.MuiTypography-root {
-    font-size: 20px;
-   }
 }

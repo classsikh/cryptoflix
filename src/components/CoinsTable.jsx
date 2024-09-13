@@ -1,6 +1,5 @@
-import axios from "axios";
 import React, { useState, useContext, useEffect } from "react";
-import { CoinList } from "../config/api";
+
 import { CryptoContext } from "../cryptocontext";
 import {
   Container,
@@ -34,26 +33,14 @@ export function numberWithCommas(x) {
 }
 const CoinsTable = () => {
   const [search, setSearch] = useState();
-  const [coins, setCoins] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const {currency, symbol } = useContext(CryptoContext);
+  
+  
+  const {symbol,coins,loading } = useContext(CryptoContext);
   const [page, setPage] = useState(1);
 
   const navigate = useNavigate();
 
-  const fetchCoins = async () => {
-    setLoading(true);
-    const { data } = await axios.get(CoinList(currency));
-
-    setCoins(data);
-    setLoading(false);
-  };
-
-  useEffect(() => {
-    fetchCoins();
-  }, [currency]);
-
-  const handleSearch = () => {
+  const handleSearch = (event) => {
     if (!search) {
       return coins;
     }

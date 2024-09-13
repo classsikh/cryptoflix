@@ -87,12 +87,8 @@ const Coininfo = ({ coin }) => {
               }}
             />
                <div
-              style={{
-                display: "flex",
-                marginTop: 20,
-                justifyContent: "space-around",
-                width: "100%",
-              }}
+               className='btncont'
+              
             >
               {chartDays.map((day) => (
                 <SelectButton

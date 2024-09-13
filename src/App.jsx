@@ -4,6 +4,8 @@ import Header from "./components/Header"
 import Homepage from "./pages/Homepage"
 import CoinPage from "./pages/CoinPage"
 import "./index.css" 
+import UserAlert from "./components/alert"
+
 
 function App() {
  
@@ -19,7 +21,7 @@ function App() {
           <Route path="/coins/:id" Component={CoinPage} />
           </Routes>
         </div>
-        
+        <UserAlert/>
     </BrowserRouter>
    
   )
