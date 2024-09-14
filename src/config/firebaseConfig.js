@@ -1,10 +1,11 @@
-
+// src/config/firebaseConfig.js
 const firebaseConfig = {
-    apiKey: "AIzaSyBJ_DmZNQQjQE3g7dtK9PHqwg8i11xGGcc",
-    authDomain: "cryptoflix-2eb52.firebaseapp.com",
-    projectId: "cryptoflix-2eb52",
-    storageBucket: "cryptoflix-2eb52.appspot.com",
-    messagingSenderId: "512063159114",
-    appId: "1:512063159114:web:9663a1f88acde4a0a95fb3"
-  };
-  export  default firebaseConfig;
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
+};
+
+export default firebaseConfig;
