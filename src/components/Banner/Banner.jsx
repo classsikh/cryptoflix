@@ -16,7 +16,7 @@ const Banner = () => {
           fontFamily: "Monstserrat",
         }}
         >
-        Crypto Tracker
+        CryptoFlix
       </Typography>
       <Typography
       variant='subtitle2'

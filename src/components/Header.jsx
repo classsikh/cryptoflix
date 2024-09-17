@@ -55,7 +55,7 @@ const Header = () => {
 
             }}
           >
-            Crypto Tracker
+            CryptoFlix
           </Typography>
           <Select
             
